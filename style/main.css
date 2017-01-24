@@ -6,10 +6,7 @@
 
 
 
-a:link {
-    color: #3D3D3D;
-}
-
+a:link,
 a:visited {
     color: #3D3D3D;
 }
@@ -29,7 +26,14 @@ a  {
 
 /*----------------------------------------*/
 
-header #main-nav ol li{
+body{
+    background-color:#FFFFFF;
+}
+.main-ol-nav{
     display: inline-block;
-    padding-right:0;
+    list-style: none;
+}
+
+.main-ol-nav > ol > li:first-child a{
+    color: #f15959;
 }
