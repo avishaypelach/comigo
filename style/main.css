@@ -3,6 +3,32 @@
         display: none;
     }
 }
+/*--------------button--------------*/
+.button-sec:hover,
+.button-sec:link,
+.button-sec:active,
+.button-sec:visited{
+    color: #FFFFFF;
+}
+
+
+.button-sec:focus{
+    color: #F14848;
+    outline: #F14848;
+}
+
+.button-sec-4:hover,
+.button-sec-4:link,
+.button-sec-4:visited,
+.button-sec-4:active{
+    color: #F14848;
+}
+
+
+.button-sec-4:focus{
+    color: #FFFFFF;
+    outline: #FFFFFF;
+}
 
 /*--------------------------------------*/
 
@@ -25,11 +51,15 @@ a  {
 }
 
 /*----------------------------------------*/
+html,
+body{
+    font-size: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
 body{
     background-color:#FFFFFF;
-    width: 100%;
-    padding
+    width: 1924px;
 }
 
 section{
@@ -47,34 +77,43 @@ section{
 }
 
 /*----------------sec-1-----------------*/
+.headig-sec-1 h3{
+    font-size: 3.6em;
+    line-height: 1em;
+    color: #FFFFFF;
+}
 
+.headig-sec-1 h2{
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    color: #FFFFFF;
+}
 .sec-1{
     background-image:url(../assets/other/homepage-featured-new-1920x745.jpg);
     height: 745px;
     width: 100%;
     background-repeat: no-repeat;
-    position: relative;
     margin: auto;
     text-align: center;
 }
 
-.button-sec-1{
-    display: inline-block;
-    position: relative;
-    font-size: .64em;
-    line-height: 1em;
-    letter-spacing: 1.5px;
-    font-weight: 400;
-    padding: 1.2em 2em;
-    border-radius: 1.7em;
-    margin: 2em auto;
-    text-transform: uppercase;
-    background-color: #F14848;
-    color: #FFFFFF;
+/*-------------------sec-2---------------*/
+.sec-2{
+    width: 962px;
+    margin: auto;
+    text-align: center;
 }
 
-/*----------------blog-------------------*/
-.blog li{
+.heading-sec-2{
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    line-height: 1rem;
+    font-weight: 300;
+}
+
+    /*----------------blog-------------------*/
+.blog li {
     display: inline-block;
     text-align: center;
     margin-top: auto;
@@ -133,13 +172,23 @@ footer{
 }
 /*-------------------sec-4-5-------*/
 .sec-4-5{
+
+}
+.sec-4-5 div{
     display: inline-block;
     background-size: cover;
+    background-position: center center;
+    border: none;
+    width: 900px;
+    height: 818px;
+    float: left;
 }
 .sec-4{
     background-image: url("../assets/other/home-tv-service-bg1.png");
     background-color: #F14848;
     color: #F9F9F9;
+    width: 900px;
+    height: 818px;
 }
 .sec-4 h2{
     font-size: 2em;
@@ -149,39 +198,18 @@ footer{
     text-transform: uppercase;
 }
 
-.button-sec-4{
-    background-color: #FFFFFF;
-    color: #F14848;
-    display: inline-block;
-    position: relative;
-    font-size: .64em;
-    line-height: 1em;
-    letter-spacing: 1.5px;
-    font-weight: 400;
-    padding: 1.2em 2em;
-    border-radius: 1.7em
-}
 
 .sec-5{
     background-image: url("../assets/other/home-tv-service-bg2.png");
     background-color: #F9F9F9;
+    width: 600px;
+    height: 818px;
 }
-
-.button-sec-5{
-    background-color: #F14848;
-    color:  #FFFFFF;
-    display: inline-block;
-    position: relative;
-    font-size: .64em;
-    line-height: 1em;
-    letter-spacing: 1.5px;
-    font-weight: 400;
-    padding: 1.2em 2em;
-    border-radius: 1.7em
-}
-
 
 /*------------------sec-6-------------------*/
+.sec-6{
+
+}
 
 .sec-6 h2{
     font-size: 2.6em;
@@ -194,7 +222,11 @@ footer{
     line-height: 1.2em;
 }
 
-.button-sec-6{
+/*-------------butten-----------------------------*/
+
+
+.button-sec
+{
     background-color: #F14848;
     color: #FFFFFF;
     display: inline-block;
@@ -207,4 +239,17 @@ footer{
     border-radius: 1.7em;
     margin: 2em auto;
     text-transform: uppercase;
+}
+
+.button-sec-4 {
+    background-color: #FFFFFF;
+    color: #F14848;
+    display: inline-block;
+    position: relative;
+    font-size: .64em;
+    line-height: 1em;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    padding: 1.2em 2em;
+    border-radius: 1.7em;
 }
