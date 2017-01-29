@@ -7,28 +7,19 @@
 .button-sec:hover,
 .button-sec:link,
 .button-sec:active,
+.button-sec:focus,
 .button-sec:visited{
     color: #FFFFFF;
-}
-
-
-.button-sec:focus{
-    color: #F14848;
-    outline: #F14848;
 }
 
 .button-sec-4:hover,
 .button-sec-4:link,
 .button-sec-4:visited,
+.button-sec-4:focus,
 .button-sec-4:active{
     color: #F14848;
 }
 
-
-.button-sec-4:focus{
-    color: #FFFFFF;
-    outline: #FFFFFF;
-}
 
 /*--------------------------------------*/
 
@@ -59,7 +50,8 @@ body{
 
 body{
     background-color:#FFFFFF;
-    width: 1924px;
+    margin: 0;
+    width: 100%;
 }
 
 section{
@@ -68,51 +60,76 @@ section{
 
 /*------------header----------------------*/
 
-.main-nav li {
-    list-style-type: none;
+.main-header{
+    width: 100%;
+    display: block;
+    height: 66px;
+
 }
 
-.main-nav > ol > li:first-child a{
+/*--------------header-nav--------------*/
+.top-nav li{
+    list-style-type: none;
+    display: inline;
+}
+.nav-ol-li-home a{
+    color: #f15959;
+}
+.nav-ol{
+    display: inline;
+}
+.nav-ol li{
+
+    display: inline-block;
+}
+.nav-ol > li:first-child a{
     color: #f15959;
 }
 
-/*----------------sec-1-----------------*/
-.headig-sec-1 h3{
-    font-size: 3.6em;
-    line-height: 1em;
-    color: #FFFFFF;
-}
-
-.headig-sec-1 h2{
-    font-size: 1.5em;
-    -webkit-margin-before: 0.83em;
-    -webkit-margin-after: 0.83em;
-    color: #FFFFFF;
-}
-.sec-1{
+/*---------------sec-1------------------*/
+.sec-1-2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
     background-image:url(../assets/other/homepage-featured-new-1920x745.jpg);
     height: 745px;
     width: 100%;
-    background-repeat: no-repeat;
+    background-size: cover;
     margin: auto;
-    text-align: center;
+    align-items: center;
 }
 
+.headig-sec-1{
+    color: #FFFFFF;
+}
 /*-------------------sec-2---------------*/
 .sec-2{
     width: 962px;
     margin: auto;
     text-align: center;
+    align-items: center;
 }
 
-.heading-sec-2{
+.heading-sec-2 h2{
     font-size: 2.6rem;
     text-transform: uppercase;
     line-height: 1rem;
     font-weight: 300;
 }
-
-    /*----------------blog-------------------*/
+.p-sec-2 p{
+    font-size: 100%;
+    line-height: 1.4em;
+    font-weight: 100;
+    color: #3d3d3d;
+}
+/*---------------------sec-3---------------*/
+.h2-sec-3 h2{
+    font-size: 1.8rem;
+    line-height: 1rem;
+    font-weight: 300;
+    text-transform: uppercase
+}
+/*----------------blog-------------------*/
 .blog li {
     display: inline-block;
     text-align: center;
@@ -155,7 +172,72 @@ section{
     background-repeat: no-repeat;
 }
 
-/*--------------footer--------------------*/
+/*-------------------sec-4-5----------------*/
+.sec-4-5{
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    height: 818px;
+}
+
+.sec-4{
+    background-image: url("../assets/other/home-tv-service-bg1.png");
+    background-color: #F14848;
+    display: inline-block;
+    color: #F9F9F9;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.sec-5{
+    background-image: url("../assets/other/home-tv-service-bg2.png");
+    background-color: #F9F9F9;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.h2-sec-4 h2{
+    font-size: 2rem;
+    line-height: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.h3-sec-4 h3{
+    font-size: .8em;
+    line-height: 1.2em;
+    font-weight: 300;
+    color: #fff;
+}
+.h2-sec-5 h2{
+    font-size: 2rem;
+    line-height: 1rem;
+    font-weight: 300;
+    margin: 0;
+    text-transform: uppercase;
+}
+.h3-sec-5 h3{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-weight: 300;
+}
+
+/*------------------sec-6-------------------*/
+.sec-6 h2{
+    font-size: 2.6rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+}
+
+.sec-6 h3{
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+/*--------------footer----------------------*/
 footer{
     background-color: #1E2024;
 }
@@ -170,59 +252,8 @@ footer{
     color: #636363;
     list-style-type: none;
 }
-/*-------------------sec-4-5-------*/
-.sec-4-5{
 
-}
-.sec-4-5 div{
-    display: inline-block;
-    background-size: cover;
-    background-position: center center;
-    border: none;
-    width: 900px;
-    height: 818px;
-    float: left;
-}
-.sec-4{
-    background-image: url("../assets/other/home-tv-service-bg1.png");
-    background-color: #F14848;
-    color: #F9F9F9;
-    width: 900px;
-    height: 818px;
-}
-.sec-4 h2{
-    font-size: 2em;
-    line-height: 1em;
-    font-weight: 300;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-
-.sec-5{
-    background-image: url("../assets/other/home-tv-service-bg2.png");
-    background-color: #F9F9F9;
-    width: 600px;
-    height: 818px;
-}
-
-/*------------------sec-6-------------------*/
-.sec-6{
-
-}
-
-.sec-6 h2{
-    font-size: 2.6em;
-    line-height: 1em;
-    text-transform: uppercase;
-}
-
-.sec-6 h3{
-    font-size: .8em;
-    line-height: 1.2em;
-}
-
-/*-------------butten-----------------------------*/
+/*-------------butten-----------------------*/
 
 
 .button-sec
