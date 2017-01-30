@@ -1,8 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
         <link rel="stylesheet" href="style/main.css">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
         <title>Document</title>
@@ -12,14 +13,14 @@
     <body>
 
         <header class="main-header">
-
-            <h1> <a href="http://comigo.com">  <img src="style/logo/comigo-logo-black.png" alt="comigo-logo"> </a> </h1>
-
+            <div class="h1-sec-1">
+                <h1> <a href="http://comigo.com">  <img src="style/logo/comigo-logo-black.png" alt="comigo-logo"> </a> </h1>
+            </div>
             <nav class="top-nav">
                 <ol>
                     <li class="nav-ol-li-home"> <a href="#"> home </a> </li>
                     <li class="nav-ol-li"> <a href="#"> Our Solutions </a>
-                        <ol>
+                        <ol class="display-none">
                             <li> <a href="#"> el cloud </a>
                                 <ol>
                                     <li> <a href="#"> elx </a> </li>
@@ -27,7 +28,7 @@
                                 </ol>
                             </li>
                             <li> <a href="#"> el middelware </a>
-                                <ol>
+                                <ol class="display-none">
                                     <li> <a href="#"> android </a> </li>
                                     <li> <a href="#"> comigo whatch app </a> </li>
                                 </ol>
@@ -37,7 +38,7 @@
                     </li>
                     <li class="nav-ol-li"> <a href="#"> Partners </a> </li>
                     <li class="nav-ol-li"> <a href="#"> Industry Insights </a>
-                        <ol>
+                        <ol class="display-none">
                             <li> <a href="#"> media room </a> </li>
                             <li> <a href="#"> blog </a> </li>
                             <li> <a href="#"> industry events </a> </li>
@@ -52,60 +53,61 @@
         <section class="sec-1">
             <div class="sec-1-2">
                 <div class="headig-sec-1">
-                    <h2> Comigo OTT/STB solutions - redefine TV experience </h2>
-                    <h3> Experience Intelligence </h3>
-                    <a class="button-sec" href="#"> our solutions </a>
+                    <div class="h2-sec-1">
+                        <h2> Comigo OTT/STB solutions - redefine TV experience </h2>
+                    </div>
+                    <div class="h3-sec-1">
+                        <h3> Experience Intelligence </h3>
+                    </div>
+                        <a class="button-sec" href="#"> our solutions </a>
                 </div>
             </div>
-
-            <!--<img src="#" alt="background"/>-->
         </section>
 
-        <section>
-            <div class="sec-2">
-                <div class="heading-sec-2">
-                   <h2> why comigo? </h2>
-                </div>
-                <div class="p-sec-2">
-                    <p> Comigo redefines the TV experience,
-                        <br> infusing it with the full power of the Internet. </p>
-                </div>
-                <div id="button" class="button-sec">
-                     <a href="#"> contact us </a>
-                </div>
+        <section class="sec-2">
+            <div class="heading-sec-2">
+               <h2> why comigo? </h2>
+            </div>
+            <div class="p-sec-2">
+                <p> Comigo redefines the TV experience,
+                    <br> infusing it with the full power of the Internet. </p>
+            </div>
+            <div class="button-sec">
+                 <a href="#"> contact us </a>
             </div>
         </section>
 
         <section class="sec-3">
-            <div class="h2-sec-3">
-                <h2> ENGAGE VIEWERS,DIFFERENTIATE EXPERIENCE AND DRIVE NEW REVENUE with highly-relevant contextual services </h2>
+            <div class="blog-main">
+                <div class="h2-sec-3">
+                    <h2> ENGAGE VIEWERS,DIFFERENTIATE EXPERIENCE AND DRIVE NEW REVENUE with highly-relevant contextual services </h2>
+                </div>
+                <dl>
+                    <dt> PEDIA </dt>
+                    <dd> Drive stickiness by enriching content with contextual data from external sources </dd>
+                    <dd> <img src="comigo/services/pedia.png" alt="blabla"/> </dd>
+
+                    <dt> PARTICIPATION </dt>
+                    <dd> Engage viewers and increase content spread through data-driven social features </dd>
+                    <dd> <img src="assets/services/participation.png" alt="blabla"/> </dd>
+
+                    <dt> DISCOVERY</dt>
+                    <dd> Offer personalised content with contextualised search, menu and recommendations </dd>
+                    <dd> <img src="assets/services/discovery.png" alt="blabla"/> </dd>
+
+                    <dt> COMMERCE </dt>
+                    <dd> Create new revenue engines through contextual shopping services</dd>
+                    <dd> <img src="comigo/services/commerce.png" alt="blabla"/> </dd>
+
+                    <dt> ADVERTISING </dt>
+                    <dd> Offer ultra-targeted measurable advertising with advanced campaign analytics </dd>
+                    <dd> <img src="assets/services/advertising.png" alt="blabla"/> </dd>
+
+                    <dt> CUSTOMIZE </dt>
+                    <dd> Quickly launch new, unique services based on our open SDK </dd>
+                    <dd> <img src="assets/services/customize.png" alt="blabla"/> </dd>
+                </dl>
             </div>
-            <dl>
-                <dt> PEDIA </dt>
-                <dd> Drive stickiness by enriching content with contextual data from external sources </dd>
-                <dd> <img src="comigo/services/pedia.png" alt="blabla"/> </dd>
-
-                <dt> PARTICIPATION </dt>
-                <dd> Engage viewers and increase content spread through data-driven social features </dd>
-                <dd> <img src="assets/services/participation.png" alt="blabla"/> </dd>
-
-                <dt> DISCOVERY</dt>
-                <dd> Offer personalised content with contextualised search, menu and recommendations </dd>
-                <dd> <img src="assets/services/discovery.png" alt="blabla"/> </dd>
-
-                <dt> COMMERCE </dt>
-                <dd> Create new revenue engines through contextual shopping services</dd>
-                <dd> <img src="comigo/services/commerce.png" alt="blabla"/> </dd>
-
-                <dt> ADVERTISING </dt>
-                <dd> Offer ultra-targeted measurable advertising with advanced campaign analytics </dd>
-                <dd> <img src="assets/services/advertising.png" alt="blabla"/> </dd>
-
-                <dt> CUSTOMIZE </dt>
-                <dd> Quickly launch new, unique services based on our open SDK </dd>
-                <dd> <img src="assets/services/customize.png" alt="blabla"/> </dd>
-            </dl>
-
         </section>
 
         <section class="sec-4-5">
@@ -129,18 +131,25 @@
                 </div>
         </section>
 
-        <section>
-            <div class="sec-6">
-                <h2> YOUR CONTENT, COMIGO’S UNIQUE EXPERIENCE </h2>
-                <h3> Intelligence-based contextual WatchApp™ Applications. </h3>
-                <a class="button-sec" href="#"> LEARN MORE </a>
-                <img src="assets/other/screen_whos_on.jpg" alt="tv display"/>
+        <section class="sec-6">
+            <div class="wrap-sec-6">
+                <div class="h2-sec-6">
+                    <h2> YOUR CONTENT, COMIGO’S UNIQUE EXPERIENCE </h2>
+                </div>
+                <div class="p=sec=6">
+                    <p> Intelligence-based contextual WatchApp™ Applications. </p>
+                </div>
+                <div class="a-sec-6">
+                    <a class="button-sec" href="#"> LEARN MORE </a>
+                </div>
+            </div>
+            <div class="img-sec-6">
+                <img src="assets/other/screen_whos_on.jpg"/>
             </div>
         </section>
 
-        <section>
-            <ol>
-                <li><h2> LEARN MORE ABOUT COMIGO </h2></li>
+        <section class="sec-7">
+                    <h2> LEARN MORE ABOUT COMIGO </h2>
                 <li><a href="#"> Download our brochure to learn more </a></li>
                 <li><a href="#"> SCHEDULE A DEMO </a></li>
                 <li><a href="#"> schedule a meeting at IBC 2016 </a></li>
@@ -173,59 +182,64 @@
         </section>
 
         <footer>
-            <section>
-                <nav class="footer-1-li">
-                    <ol>
-                        <li> <a href="#"> home </a> </li>
-                        <li> <a href="#"> Our Solutions </a>
+            <section class="footer">
+                <section class="footer-1">
+                    <div class="content-center">
+                        <nav class="footer-1-li">
                             <ol>
-                                <li> <a href="#"> el cloud </a>
+                                <li> <a href="#"> home </a> </li>
+                                <li> <a href="#"> Our Solutions </a>
                                     <ol>
-                                        <li> <a href="#"> elx </a> </li>
-                                        <li> <a href="#"> el mind </a> </li>
+                                        <li> <a href="#"> el cloud </a>
+                                            <ol>
+                                                <li> <a href="#"> elx </a> </li>
+                                                <li> <a href="#"> el mind </a> </li>
+                                            </ol>
+                                        </li>
+                                        <li> <a href="#"> el middelware </a>
+                                            <ol>
+                                                <li> <a href="#"> android </a> </li>
+                                                <li> <a href="#"> comigo whatch app </a> </li>
+                                            </ol>
+                                        </li>
+                                        <li> <a href="#"> android stb </a> </li>
                                     </ol>
                                 </li>
-                                <li> <a href="#"> el middelware </a>
+                                <li> <a href="#"> Partners </a> </li>
+                                <li> <a href="#"> Industry Insights </a>
                                     <ol>
-                                        <li> <a href="#"> android </a> </li>
-                                        <li> <a href="#"> comigo whatch app </a> </li>
+                                        <li> <a href="#"> media room </a> </li>
+                                        <li> <a href="#"> blog </a> </li>
+                                        <li> <a href="#"> industry events </a> </li>
                                     </ol>
                                 </li>
-                                <li> <a href="#"> android stb </a> </li>
+                                <li> <a href="#">  About </a> </li>
+                                <li> <a href="#">  contact </a> </li>
                             </ol>
-                        </li>
-                        <li> <a href="#"> Partners </a> </li>
-                        <li> <a href="#"> Industry Insights </a>
-                            <ol>
-                                <li> <a href="#"> media room </a> </li>
-                                <li> <a href="#"> blog </a> </li>
-                                <li> <a href="#"> industry events </a> </li>
-                            </ol>
-                        </li>
-                        <li> <a href="#">  About </a> </li>
-                        <li> <a href="#">  contact </a> </li>
-                    </ol>
-                </nav>
-                <div class="footer-logo">
-                    <h2> <a href="#"> <img src="comigo/logo/comigo-logo-white.png" alt="comigo_logo"/> </a> </h2>
+                        </nav>
+                        <div class="footer-logo">
+                            <h2> <a href="#"> <img src="comigo/logo/comigo-logo-white.png" alt="comigo_logo"/> </a> </h2>
+                        </div>
+                    </div>
+                </section>
+                <div class="content-center">
+                    <section class="footer-2">
+                        <ul class="footer-ul-1">
+                            <li> All rights reserved Comigo © 2016 </li>
+                            <li> <a href="#"> termes </a> </li>
+                            <li> <a href="#"> contact </a> </li>
+                            <li> <a href="#"> privacy policy </a> </li>
+                            <li id="fatlady"> powered by <a href="#"> fatlady </a> </li>
+                        </ul>
+
+                        <ul class="footer-ul-2">
+                            <li> <a href="#"> facebook </a> </li>
+                            <li> <a href="#"> twitter </a> </li>
+                            <li> <a href="#"> google+ </a> </li>
+                            <li> <a href="#"> linkedin </a> </li>
+                        </ul>
+                </section>
                 </div>
-            </section>
-
-            <section class="footer-2-li">
-                <ul>
-                    <li> All rights reserved Comigo © 2016 </li>
-                    <li> <a href="#"> termes </a> </li>
-                    <li> <a href="#"> contact </a> </li>
-                    <li> <a href="#"> privacy policy </a> </li>
-                    <li> powered by <a href="#"> fatlady </a> </li>
-                </ul>
-
-                <ul>
-                    <li> <a href="#"> <img src="#" alt="facebook"/> facebook </a> </li>
-                    <li> <a href="#"> <img src="#" alt="twitter"/> twitter </a> </li>
-                    <li> <a href="#"> <img src="#" alt="google+"/> google+ </a> </li>
-                    <li> <a href="#"> <img src="#" alt="linkedin"/> linkedin </a> </li>
-                </ul>
             </section>
         </footer>
 
