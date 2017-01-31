@@ -49,6 +49,8 @@ body{
     font-size: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     box-sizing: content-box;
+    height: 100%;
+    width: 100%;
 }
 *,
 *:before,
@@ -144,7 +146,7 @@ section{
     text-align: center;
     background-image:url(../assets/other/homepage-featured-new-1920x745.jpg);
     height: 650px;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     margin: auto;
     align-items: center;
@@ -273,7 +275,7 @@ section{
 .sec-4-5{
     display: inline-block;
     margin: auto;
-    width: 100%;
+    width: 100vw;
     height: 818px;
 }
 
@@ -281,7 +283,7 @@ section{
     background-image: url("../assets/other/home-tv-service-bg1.png");
     background-color: #F14848;
     color: #F9F9F9;
-    width: 50%;
+    width: 50vw;
     height: 100%;
     float: left;
     text-align: center;
@@ -290,7 +292,7 @@ section{
 .sec-5{
     background-image: url("../assets/other/home-tv-service-bg2.png");
     background-color: #F9F9F9;
-    width: 50%;
+    width: 50vw;
     height: 100%;
     float: right;
     text-align: center;
@@ -325,14 +327,16 @@ section{
 /*------------------sec-6-------------------*/
 .sec-6{
     height: 100%;
-    width: 100%;
+    width: 100vw;
+    display: block;
+    background-color: #FFFFFF;
 }
 .img-sec-6{
-    width: 60%;
-    height: 900px;
-    margin-top: 0;
-    margin-right: 0;
-
+    display: inline-block;
+    width: 20vw;
+    padding: 40px 0 40px 40px;
+    float: right;
+    height: 100px;
 }
 
 .h2-sec-6 h2{
@@ -350,11 +354,14 @@ section{
     color: #3d3d3d;
     width: 10px;
 }
-.a-sec-6{
-
+.wrap-sec-6{
+    display: inline-block;
+    width: 40vw;
 }
-
-
+/*----------------sec-7---------------------*/
+.sec-7{
+    z-index: 999;
+}
 /*--------------footer----------------------*/
 .footer{
     background-color: #151515;
