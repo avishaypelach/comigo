@@ -96,6 +96,7 @@ section{
 .display-none{
     display: none;
 }
+
 .top-nav{
     display: inline-block;
     float: right;
@@ -134,10 +135,44 @@ section{
     font-weight: 700;
     line-height: 66px;
 }
-
-.nav-ol > li:first-child a{
-    color: #f15959;
+/*-----------------------------------------*/
+.top-nav > ol > li {
+    display: inline-block;
+    position: relative;
 }
+li > ol {
+    display: none;
+}
+ol li:hover > ol {
+    display: inline;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    list-style-type: none;
+    width: 200px;
+}
+ol li:hover > ol li{
+    position: relative;
+}
+ol li:hover > ol li:hover > ol {
+    left: 130px;
+    top: 0;
+}
+ol li:hover > ol li:hover > ol li:hover > ol {
+    background-color: #f6f6f6;
+    left: 175px;
+    top: 0;
+}
+
+/*.nav-ol > li:first-child a{*/
+    /*color: #f15959;*/
+/*}*/
+/*.top-nav li:hover .display-none{*/
+    /*display: inline-block;*/
+    /*position: absolute;*/
+    /*top:66px;*/
+    /*background-color: #ffffff;*/
+/*}*/
 
 /*---------------sec-1------------------*/
 .sec-1-2{
@@ -172,10 +207,13 @@ section{
     text-align: center;
     align-items: center;
     height: 332px;
-    margin-top: 10%;
+}
+.wrap-sec-2{
+
 }
 
 .heading-sec-2 h2{
+    margin: 0;
     font-size: 3rem;
     text-transform: uppercase;
     line-height: 1rem;
@@ -208,68 +246,6 @@ section{
 }
 .headig-sec-3{
 }
-/*----------------blog-------------------*/
-.blog li {
-    display: inline-block;
-    text-align: center;
-    width: 16.6%;
-    height: 480px;
-    float: left;
-    background-position: center center;
-    background-size: cover;
-    padding: 0;
-    margin: 0;
-}
-
-.blog li a {
-    color: #ffffff;
-    padding: 0;
-    margin: 0;
-    width: 16.6%;
-}
-
-.blog-1{
-    background-repeat: no-repeat;
-    background-color: #F14848;
-    padding: 0;
-    margin: 0;
-    width: 16.6%;
-}
-.blog-2{
-    background-image: url("../assets/blog/ibc_post_EI-750x508.png");
-    background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
-    width: 16.6%;
-}
-.blog-3 {
-    background-image: url("../assets/blog/IMG_9294-750x563.jpeg");
-    background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
-    width: 16.6%;
-}
-.blog-4 {
-    background-image: url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
-    background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
-    width: 16.6%;
-}
-.blog-5{
-    background-image: url("../assets/blog/post_tv_connect-750x508.jpeg");
-    background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
-    width: 16.6%;
-}
-.blog-6{
-    background-image: url("../assets/blog/post_quality-750x508.jpeg");
-    background-repeat: no-repeat;
-    padding: 0;
-    margin: 0;
-    width: 16.6%;
-}
 
 /*-------------------sec-4-5----------------*/
 .sec-4-5{
@@ -280,8 +256,10 @@ section{
 }
 
 .sec-4{
-    background-image: url("../assets/other/home-tv-service-bg1.png");
+    background-image: url("../assets/other/home-tv-service-bg1.png"), url(../assets/other/ic_EI_cloud_2_home_page.png);
     background-color: #F14848;
+    background-size: cover;
+    background-repeat: no-repeat;
     color: #F9F9F9;
     width: 50vw;
     height: 100%;
@@ -292,6 +270,8 @@ section{
 .sec-5{
     background-image: url("../assets/other/home-tv-service-bg2.png");
     background-color: #F9F9F9;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 50vw;
     height: 100%;
     float: right;
@@ -326,19 +306,27 @@ section{
 
 /*------------------sec-6-------------------*/
 .sec-6{
-    height: 850px;
+    height: 600px;
     width: 100vw;
     display: block;
     background-color: #FFFFFF;
 }
-.img-sec-6{
+.wrap-img-sec-6{
     display: inline-block;
-    width: 50vw;
-    padding: 40px 0 40px 0px;
+    width: 60vw;
+    padding-top: 40px;
     float: right;
-    height: 100px;
+    height: 90%;
 }
-
+.img-sec-6{
+    background-image: url("../assets/other/screen_whos_on.jpg");
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    float: right;
+    height: 100%;
+    background-repeat: no-repeat;
+}
 .h2-sec-6 h2{
     font-size: 2.6rem;
     line-height: 1em;
@@ -350,23 +338,105 @@ section{
 .heading-sec-6{
     display: inline-block;
     width: 40vw;
-    text-align: center;
-}
+    text-align: left;
 
+}
 .p-sec-6{
     font-size: 0.8rem;
     line-height: 1.2rem;
     color: #3d3d3d;
-    width: 30px;
-}
-.wrap-sec-6{
-    display: inline-block;
-
-
+    width: 200px;
 }
 /*----------------sec-7---------------------*/
 .sec-7{
     z-index: 999;
+}
+/*----------------blog-------------------*/
+.blog li {
+    display: inline-block;
+    text-align: center;
+    width: 16.6%;
+    height: 480px;
+    float: left;
+    background-position: center center;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+.blog > li > a:first-child h2{
+    display: inline-block;
+    padding: 0;
+    left: 10%;
+    bottom: 10%;
+    text-align: left;
+    color: #ededed;
+    font-size: 6em;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 200px;
+    font-weight: 300;
+}
+
+.blog li a {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: left;
+    font-size: .9em;
+    line-height: 1.2em;
+    color: #ededed;
+    height: 480px;
+}
+
+.blog-1{
+    background-repeat: no-repeat;
+    background-color: #F14848;
+    padding: 0;
+    margin: 0;
+    width: 16.6%;
+    position: relative;
+}
+.blog-2{
+    background-image: url("../assets/blog/ibc_post_EI-750x508.png");
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    width: 16.6%;
+    position: relative;
+}
+.blog-3{
+    background-image: url("../assets/blog/IMG_9294-750x563.jpeg");
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    width: 16.6%;
+    position: relative;
+}
+.blog-4{
+    background-image: url("../assets/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg");
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    width: 16.6%;
+    position: relative;
+}
+.blog-5{
+    background-image: url("../assets/blog/post_tv_connect-750x508.jpeg");
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    width: 16.6%;
+    position: relative;
+}
+.blog-6{
+    background-image: url("../assets/blog/post_quality-750x508.jpeg");
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    width: 16.6%;
+    position: relative;
 }
 /*--------------footer----------------------*/
 .footer{
@@ -429,7 +499,7 @@ section{
     position: relative;
     font-size: .64em;
     line-height: 1em;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     font-weight: 400;
     padding: 1.2em 2em;
     border-radius: 1.7em;
