@@ -102,22 +102,19 @@ section{
     padding-left: 20px;
     float: left;
     display: inline-block;
-    line-height: 66px;
-
 }
 .h1-sec-1 img{
-    line-height: 66px;
     vertical-align: middle;
 }
 .top-nav ol{
     font-weight: 300;
     margin: 0;
     padding: 0 20px 0 0;
+    font-size: 1.2rem;
 }
 .nav-ol-li a{
-    /*line-height: 66px;*/
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 20px;
     background-color: rgb(255,255,255);
 }
 
@@ -127,33 +124,14 @@ section{
     margin-top: 0;
     float: left;
 }
-.nav-ol-li-home a{
+.nav-ol-li-home a {
     color: #f15959;
     text-transform: capitalize;
     font-weight: 700;
     line-height: 66px;
 }
-/*-----------------------------------------*/
-/*ol li:hover{*/
-    /*background-color: #f15959;*/
-/*}*/
-/*.top-nav li > ol{*/
-    /*display: none;*/
-/*}*/
-/*.top-nav li:hover > ol{*/
-    /*display: inline-block;*/
-    /*position: absolute;*/
-    /*top: 100%;*/
-    /*left: 0;*/
-    /*width: 100%;*/
-/*}*/
-/*.top-nav li > ol > li{*/
-    /*width: 33%;*/
-    /*float: left;*/
-/*}*/
-/*.top-nav li ol > li{*/
-    /*width: 33%;*/
-/*}*/
+
+
 
 
 /*-------------------------------*/
@@ -182,7 +160,7 @@ ol li:hover > ol li:hover > ol{
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fefdfc;
+    background-color: #efdfc;
 }
 ol li:hover > ol li:hover > ol li{
     width: 50%;
@@ -200,15 +178,21 @@ ol li:hover > ol > li > a{
     display: inline-block;
     vertical-align: middle;
     line-height: 1px;
+    font-size: 2.5rem;
 }
 
+.nav-ol-li ol a:hover{
+    background-color: #F25A5A;
+    color: white;
+    font-size: 1.8rem;
+}
 
 /*---------------sec-1------------------*/
 .sec-1-2{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image:url(../assets/other/homepage-featured-new-1920x745.jpg);
+    background-image: url(../assets/other/homepage-featured-new-1920x745.jpg);
     height: 38.8vw;
     width: 100%;
     background-size: cover;
@@ -261,23 +245,109 @@ ol li:hover > ol > li > a{
 }
 /*---------------------sec-3---------------*/
 .sec-3{
-    background-color: #151515;
     width: 100%;
-
+    position: relative;
+    height: 40vw;
+    z-index: 0;
+    background-color: black;
 }
 
-.h2-sec-3 h2{
-    display: inline-block;
-    font-size: 1.8rem;
-    line-height: 30px;
+.sec-3 > .video-bg video {
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.center-sec-3{
+    padding: 60px 400px 300px;
+    height: 100%;
+    width: 100%;
+}
+.heading-sec-3{
+    height: 100%;
+    width: 20%;
+    position: relative;
+    float: left;
+}
+
+.heading-sec-3 h2 {
+    font-size: 3rem;
     font-weight: 300;
-    text-transform: uppercase;
-    color: #ededed;
-    width: 120px;
+    height: 65%;
+    width: 85%;
+    margin: 0;
+    padding: 0 0 40px 0;
 }
-.headig-sec-3{
+.heading-sec-3 h3{
+    width: 50%;
+    height: 50%;
+    font-size: 1.4rem;
+    font-weight: 100;
 }
 
+.sec-3 > div {
+    display: inline-block;
+    color: white;
+}
+.sec-3-p2{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.ul-sec-3{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 2.5rem;
+    color: #3D3D3D;
+    width: 100%;
+    height: 100%;
+    line-height: 4.2rem;
+    font-weight: 300;
+}
+
+.sec-3 figure {
+    position: absolute;
+    top: 30px;
+    right: 200px;
+    display: none;
+    color: #ededed;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.sec-3 figcaption{
+    padding-bottom: 50px;
+    line-height: 1.2rem;
+}
+.sec-3 .ul-sec-3 li:hover {
+  color: #F14848;
+}
+.sec-3 .ul-sec-3 li:hover > figure {
+    display: block;
+    float: right;
+}
+.video-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    z-index: -1;
+    display: none;
+    overflow: hidden;
+}
+.sec-3 .ul-sec-3 li:hover .video-bg {
+    display: block;
+    background-color: black;
+}
+
+.video-bg video {
+    width:100%;
+    opacity: 0.2;
+
+}
 /*-------------------sec-4-5----------------*/
 .sec-4-5{
     display: inline-block;
@@ -341,7 +411,6 @@ ol li:hover > ol > li > a{
     width: 100%;
     display: block;
     background-color: #FFFFFF;
-    border: 1px solid red;
 }
 .wrap-img-sec-6{
     display: inline-block;
