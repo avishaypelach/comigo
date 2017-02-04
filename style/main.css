@@ -431,7 +431,7 @@ ol li:hover > ol > li > a{
     width: 40%;
     display: block;
     text-align: left;
-    padding: 160px 0 0 400px;
+    padding: 160px 50px 0 400px;
     float: left;
 }
 .h2-sec-6 h2{
