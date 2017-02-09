@@ -318,6 +318,11 @@ section {
   height: 100%;
   padding-left: 30px;
 }
+.img-default{
+  position: absolute;
+  top: 10%;
+  left: 70%;
+}
 
 .ul-sec-3 {
   list-style-type: none;
