@@ -55,6 +55,7 @@ body {
 body {
   background-color: #FFFFFF;
   margin: 0
+  wi
 }
 
 ul {
@@ -79,8 +80,8 @@ section {
   box-shadow: 0 2px 16px rgba(0, 0, 0, .075);
 
 }
+/*--------------header-nav--------------*/
 @media (min-width: 961px) {
-  /*--------------header-nav--------------*/
   .top-nav {
     float: right;
     text-transform: capitalize;
@@ -257,6 +258,7 @@ section {
   height: 40vw;
   z-index: 0;
   background-color: black;
+  overflow: hidden;
 }
 
 .sec-3 > .video-bg video {
@@ -268,9 +270,12 @@ section {
 }
 
 .center-sec-3 {
-  padding: 60px 200px 0 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
-  width: 100%;
+  width: 89%;
+
 }
 
 .heading-sec-3 {
@@ -287,13 +292,19 @@ section {
   width: 85%;
   margin: 0;
   padding: 0 0 40px 0;
+  position: absolute;
+  top: 10%;
+  left: 25%;
 }
 
 .heading-sec-3 h3 {
-  width: 50%;
+  width: 56%;
   height: 50%;
   font-size: 1.4rem;
   font-weight: 100;
+  position: absolute;
+  top: 75%;
+  left: 25%;
 }
 
 .sec-3 > div {
@@ -309,14 +320,16 @@ section {
 }
 
 .ul-sec-3 {
-  display: inline-block;
   list-style-type: none;
   font-size: 2.5rem;
   color: #3D3D3D;
-  width: 100%;
+  width: 113%;
   height: 100%;
   line-height: 4.2rem;
   font-weight: 300;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .sec-3 figure {
@@ -335,30 +348,45 @@ section {
   padding-bottom: 50px;
   line-height: 1.2rem;
 }
-
 .sec-3 .ul-sec-3 li:hover {
   color: #F14848;
 }
-
 .sec-3 .ul-sec-3 li:hover > figure {
   display: block;
   float: right;
 }
 
-.video-bg {
+.video-bg-1{
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100vw;
+  height: 100%;
   z-index: -1;
   display: none;
   overflow: hidden;
+}
+.video-bg-1 video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.2;
 }
 
 .sec-3 .ul-sec-3 li:hover .video-bg {
   display: block;
   background-color: black;
+}
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: none;
+  overflow: hidden;
 }
 
 .video-bg video {
@@ -873,7 +901,9 @@ section {
     display: none;
   }
   label {
-  float: right;
+  position: absolute;
+    top:-28%;
+    left: 93%;
   display: inline-block;
   width: 60px;
   background-color: #e4e4e4;
@@ -892,32 +922,6 @@ section {
     list-style-type: none;
   }
 
-    /*position: absolute;*/
-    /*top: 100%;*/
-    /*left:0;*/
-  /*}*/
-  /*}*/
-  /*input:checked ~.top-nav > ol >li{*/
-  /*position: initial;*/
-  /*display: block;*/
-  /*z-index: 3;*/
-  /*float: none;*/
-  /*font-size: 1rem;*/
-  /*background-color: #EFEFEF;*/
-  /*opacity: 1;*/
-  /*}*/
-  /*input:checked ~.top-nav ol li ol span{*/
-  /*position: initial;*/
-  /*outline: 1px solid red;*/
-  /*display: block;*/
-  /*float: none;*/
-  /*font-size: 10px;*/
-  /*width: 50px;*/
-  /*list-style-type: disc;*/
-  /*background-color: none;*/
-  /*!*opacity: 1;*!*/
-  /*}*/
-  /*.top-nav .nav-ol-li-h*/
 }
 
 
