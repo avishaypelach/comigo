@@ -288,8 +288,7 @@ section {
 .heading-sec-3 h2 {
   font-size: 3rem;
   font-weight: 300;
-  height: 65%;
-  width: 85%;
+  width: 65%;
   margin: 0;
   padding: 0 0 40px 0;
   position: absolute;
@@ -530,7 +529,7 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
 }
 
 .heading-sec-6 {
-  height: 100%;
+  height: 49vw;
   width: 40%;
   display: block;
   text-align: left;
@@ -580,7 +579,7 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
 }
 
 .learn h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 100;
   color: rgb(61, 61, 61);
   margin: 0;
@@ -648,7 +647,6 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
   display: inline-block;
   float: right;
   background-color: #EFEFEF;
-  font-size: 4.5rem;
   font-weight: 300;
   text-transform: uppercase;
   position: relative;
@@ -670,8 +668,10 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
 }
 
 .sec-7-2 a {
-  display: block;
+  display: inline-block;
   padding-left: 66px;
+  font-size: 3.5rem;
+
 }
 
 /*------------------sec-8---------------*/
@@ -697,10 +697,13 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
 .blog li:first-child{
   width: 15%;
 }
+.blog li:first-child a{
+  height: 60%;
+}
 .blog li:first-child p{
   font-size: 1.4rem;
   font-weight: 300;
-  padding: 0 10%;
+  margin: 10% 10%;
 }
 
 .blog > li > a:first-child h2 {
@@ -768,7 +771,7 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
   font-size: 1.2rem;
   text-transform: uppercase;
   transition: all 0.5s;
-  line-height: 7.5;
+  line-height: 6.5;
 }
 
 .blog .blogstyle:hover {
@@ -789,7 +792,7 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
 
 .blog .blogstyle p{
   position: absolute;
-  top: 85%;
+  top: 75%;
   left: 10%;
   font-size: 1.5rem;
   font-weight: 300;
@@ -797,7 +800,7 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
 }
 .blog .blogstyle:hover p {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 10%;
   transition-delay: 0.2s;
 }
@@ -864,20 +867,30 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
   top: 85%;
   left: 0;
 }
-
 .footer-2 li {
   display: inline-block;
-
   font-size: 100%;
   font-family: 'Source Sans Pro', sans-serif;
   color: #636363;
+}
+.footer-ul-1{
+  display: inline-block;
+  padding-left: 100px;
+  margin-top: 1%;
+}
+.footer-ul-1 li{
+  padding-left: 20px;
 }
 
 .footer-ul-2 {
   display: inline-block;
   float: right;
+  padding-right: 20px;
+  margin-top: 1%;
 }
-
+.footer-ul-2 li{
+  padding-right: 20px;
+}
 .ul-footer {
   display: block;
   width: 20%;
@@ -895,6 +908,7 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
 
 #fatlady {
   float: right;
+  padding-left: 400px;
 }
 
 /*-------------butten-----------------------*/
@@ -905,15 +919,16 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
   display: inline-block;
   position: relative;
   font-size: 1rem;
-  line-height: 1em;
-  letter-spacing: 2px;
+  line-height: 2em;
+  letter-spacing: 5px;
   font-weight: 400;
-  padding: 1.2em 2em;
+  padding: 1.2rem 3rem;
   border-radius: 3em;
-  margin: 2em auto;
+  margin: 2rem auto;
   text-transform: uppercase;
   transition: all 0.2s, 0.5s;
   width: 40%;
+  text-align: center;
 }
 
 .button-sec:hover {
@@ -925,8 +940,8 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
   color: #F14848;
   position: absolute;
   top: 86%;
-  right: 60%;
-  width: 30%;
+  right: 30%;
+  width: 50%;
 }
 
 .b4:hover {
@@ -953,45 +968,48 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
 .clearfixed:after {
   clear: both;
 }
+/*-------------button------*/
+  .button-sec{
+    background-color: #F14848;
+    color: #FFFFFF;
+    display: inline-block;
+    position: relative;
+    font-size: 0.5rem;
+    line-height: 1.5em;
+    letter-spacing: 5px;
+    font-weight: 400;
+    padding: 0.8rem 2rem;
+    border-radius: 3em;
+    margin: 1.5rem auto;
+    text-transform: uppercase;
+    transition: all 0.2s, 0.5s;
+    width: 25%;
+  }
+  .b4 {
+    background-color: #FFFFFF;
+    color: #F14848;
+    position: absolute;
+    top: 91%;
+    right: 61%;
+  }
+
+
+@media (max-width: 1025px){
+  .heading-sec-3{
+    height: 70%;
+  }
+  .h2-sec-3 h2{
+    font-size: 1.5rem;
+    width: 85%;
+  }
+  .h3-sec-3 h3{
+    width: 60%;
+  }
+}
 /*---------------@-media-----------* */
 
-@media (max-width: 960px) {
-  .top-nav {
-    display: none;
-  }
 
-  input[type=checkbox]{
-    display: none;
-  }
-  label {
-  position: absolute;
-    top:-28%;
-    left: 93%;
-  display: inline-block;
-  width: 60px;
-  background-color: #e4e4e4;
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 1rem;
-  font-weight: 700;
-  text-align: center;
-  margin: 20px 20px 10px 0;
-  cursor: pointer;
-  }
-  input:checked ~.top-nav {
-    display: block;
-    z-index: 5;
-  }
-  input:checked ~.top-nav li{
-    list-style-type: none;
-  }
-
-}
-
-@media (max-width: 990px) {
-  .content-center {
-    max-width: 660px;
-  }
-}
+/*---------------1880-------------*/
 /*---------sec-3--------  */
 @media (max-width: 1880px) {
   .heading-sec-3{
@@ -1005,39 +1023,103 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
     padding-top: 5%;
   }
 }
-
-@media (max-width: 1280px){
-  .ul-sec-3{
-      font-size: 1.5rem;
-      line-height: 3.2rem;
-    }
-  .sec-3 figcaption{
-    font-size: 1rem ;
+/*---------------1280----------------*/
+@media (max-width: 1280px) {
+  .ul-sec-3 {
+    font-size: 1.5rem;
+    line-height: 3.2rem;
   }
-  .h2-sec-3 h2{
+
+  .sec-3 figcaption {
+    font-size: 1rem;
+  }
+
+  .h2-sec-3 h2 {
     font-size: 1.9rem;
   }
-  .h3-sec-3 h3{
+
+  .h3-sec-3 h3 {
     padding-top: 15%;
     line-height: 1rem;
   }
 
+  /*----------se4-sec-5-------*/
+  .h2-sec-4 h2 {
+    width: 80%;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: left;
+    margin: 0;
+  }
+
+  .h3-sec-4 h3 {
+    font-size: 0.75rem;
+    line-height: 0.9rem;
+    text-align: left;
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .h2-sec-5 h2 {
+    width: 100%;
+    color: #3D3D3D;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 300;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    height: 20%;
+  }
+
+  .h3-sec-5 h3 {
+    font-size: 0.75rem;
+    line-height: 0.9rem;
+    font-weight: 300;
+    text-align: left;
+  }
+
 }
-@media (max-width: 1025px){
-  .heading-sec-3{
-    height: 70%;
-  }
-  .h2-sec-3 h2{
-    font-size: 1.5rem;
-  }
-  .h3-sec-3 h3{
-    height: 0;
-    width: -1%;
+/*--------------990------------*/
+@media (max-width: 990px) {
+  .content-center {
+    max-width: 660px;
   }
 }
 
+@media (max-width: 960px) {
+  .top-nav {
+    display: none;
+  }
 
-
+  input[type=checkbox]{
+    display: none;
+  }
+  label {
+    position: absolute;
+    top:-28%;
+    left: 93%;
+    display: inline-block;
+    width: 60px;
+    background-color: #e4e4e4;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 20px 10px 0;
+    cursor: pointer;
+  }
+  input:checked ~.top-nav {
+    display: block;
+    z-index: 5;
+  }
+  input:checked ~.top-nav li{
+    list-style-type: none;
+  }
+}
 
 
 
