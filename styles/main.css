@@ -908,7 +908,7 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
 
 #fatlady {
   float: right;
-  padding-left: 400px;
+  padding-left: 320px;
 }
 
 /*-------------butten-----------------------*/
@@ -918,8 +918,8 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
   color: #FFFFFF;
   display: inline-block;
   position: relative;
-  font-size: 1rem;
-  line-height: 2em;
+  font-size: 2rem;
+  line-height: 2rem;
   letter-spacing: 5px;
   font-weight: 400;
   padding: 1.2rem 3rem;
@@ -927,7 +927,7 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
   margin: 2rem auto;
   text-transform: uppercase;
   transition: all 0.2s, 0.5s;
-  width: 40%;
+  width: 45%;
   text-align: center;
 }
 
@@ -974,23 +974,23 @@ background-image: url(../assets/other/ic_EI_cloud_2_home_page.png);
     color: #FFFFFF;
     display: inline-block;
     position: relative;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     line-height: 1.5em;
-    letter-spacing: 5px;
     font-weight: 400;
-    padding: 0.8rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 3em;
     margin: 1.5rem auto;
     text-transform: uppercase;
     transition: all 0.2s, 0.5s;
-    width: 25%;
+    width: 40%;
   }
   .b4 {
     background-color: #FFFFFF;
     color: #F14848;
     position: absolute;
     top: 91%;
-    right: 61%;
+    right: 50%;
+    letter-spacing: 3px;
   }
 
 
