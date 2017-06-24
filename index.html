@@ -4,7 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/css/main.css">
+  <link rel="stylesheet" href="styles/css/header.css">
+  <link rel="stylesheet" href="styles/css/sec-1.css">
+  <link rel="stylesheet" href="styles/css/sec-2.css">
+  <link rel="stylesheet" href="styles/css/sec-3.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
   <title>Document</title>
@@ -14,47 +19,48 @@
 <body>
 
 <header class="main-header clearfixed">
-  <div class="h1-sec-1">
-    <a href="#"> <img src="styles/logo/comigo-logo-black.png" alt="comigo-logo"> </a>
+  <div class="header-sec">
+    <a href="#" class="logo-area"> <img src="styles/logo/comigo-logo-black.png" alt="comigo-logo"> </a>
+
+    <input type="checkbox" id="link-menu" name="link-menu"/>
+    <label for="link-menu"> menu </label>
+    <nav class="top-nav">
+      <ol class="clearfixed">
+        <li class="nav-ol-li-home"><a href="#"> home </a></li>
+        <li class="nav-ol-li"><a href="#"> Our Solutions </a>
+          <ol>
+            <li><a href="#"> <span class="nav-open"> el cloud </span> </a>
+              <ol>
+                <li><a href="#"> <span class="nav-open"> elˣ </span> </a></li>
+                <li><a href="#"> <span class="nav-open"> el mind </span> </a></li>
+              </ol>
+            </li>
+            <li><a href="#"> <span class="nav-open"> el middelware </span> </a>
+              <ol>
+                <li><a href="#"> <span class="nav-open"> android </span> </a></li>
+                <li><a href="#"> <span class="nav-open"> Comigo WhatchApp™ Applications </span> </a></li>
+              </ol>
+            </li>
+            <li><a href="#"> <span class="nav-open"> android stb </span> </a></li>
+          </ol>
+        </li>
+        <li class="nav-ol-li"><a href="#"> Partners </a></li>
+        <li class="nav-ol-li"><a href="#"> Industry Insights </a>
+          <ol>
+            <li><a href="#"> <span class="nav-open"> media room </span> </a></li>
+            <li><a href="#"> <span class="nav-open"> blog </span> </a></li>
+            <li><a href="#"> <span class="nav-open"> industry events </span> </a></li>
+          </ol>
+        </li>
+        <li class="nav-ol-li"><a href="#"> About </a></li>
+        <li class="nav-ol-li"><a href="#"> contact </a></li>
+      </ol>
+    </nav>
   </div>
-  <input type="checkbox" id="link-menu" name="link-menu"/>
-  <label for="link-menu"> menu </label>
-  <nav class="top-nav">
-    <ol class="clearfixed">
-      <li class="nav-ol-li-home"><a href="#"> home </a></li>
-      <li class="nav-ol-li"><a href="#"> Our Solutions </a>
-        <ol>
-          <li><a href="#"> <span class="nav-open"> el cloud </span> </a>
-            <ol>
-              <li><a href="#"> <span class="nav-open"> elˣ </span> </a></li>
-              <li><a href="#"> <span class="nav-open"> el mind </span> </a></li>
-            </ol>
-          </li>
-          <li><a href="#"> <span class="nav-open"> el middelware </span> </a>
-            <ol>
-              <li><a href="#"> <span class="nav-open"> android </span> </a></li>
-              <li><a href="#"> <span class="nav-open"> Comigo WhatchApp™ Applications </span> </a></li>
-            </ol>
-          </li>
-          <li><a href="#"> <span class="nav-open"> android stb </span> </a></li>
-        </ol>
-      </li>
-      <li class="nav-ol-li"><a href="#"> Partners </a></li>
-      <li class="nav-ol-li"><a href="#"> Industry Insights </a>
-        <ol>
-          <li><a href="#"> <span class="nav-open"> media room </span> </a></li>
-          <li><a href="#"> <span class="nav-open"> blog </span> </a></li>
-          <li><a href="#"> <span class="nav-open"> industry events </span> </a></li>
-        </ol>
-      </li>
-      <li class="nav-ol-li"><a href="#"> About </a></li>
-      <li class="nav-ol-li"><a href="#"> contact </a></li>
-    </ol>
-  </nav>
 </header>
 
 <section class="sec-1">
-  <div class="sec-1-2">
+  <div class="sec-1-area">
     <div class="headig-sec-1">
       <div class="h2-sec-1">
         <h2> Comigo OTT/STB solutions - redefine TV experience </h2>
@@ -179,6 +185,7 @@
       </ul>
     </div>
   </div>
+  <div></div>
 </section>
 
 <section class="sec-4-5 clearfixed">
@@ -312,7 +319,7 @@
       <li><a href="#"> termes </a></li>
       <li><a href="#"> contact </a></li>
       <li><a href="#"> privacy policy </a></li>
-      <li id="fatlady"> powered by <a href="#"> fatlady </a></li>
+      <li id="fatlady"> powered by <a href="#"> avishay pelach </a></li>
     </ul>
 
     <ul class="footer-ul-2">

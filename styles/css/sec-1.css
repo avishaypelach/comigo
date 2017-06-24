@@ -1,0 +1,21 @@
+.sec-1-area {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../../assets/other/homepage-featured-new-1920x745.jpg);
+  height: 38.8vw;
+  width: 100%;
+  background-size: cover;
+  margin: auto;
+  align-items: center;
+}
+.headig-sec-1 {
+  color: #FFFFFF;
+}
+
+.h3-sec-1 h3{
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 0.5rem;
+  text-transform: capitalize;
+}
